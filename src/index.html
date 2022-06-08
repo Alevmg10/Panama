@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,30 +10,52 @@
 </head>
 <body>
     
-    <!-- Header, search bar, avatar.-->
-        <!-- Container -->
-        <div class="container flex justify-between items-center">
+    <!-- WRAPPER -->
+        <div class="w-full mt-4">
+            <!-- Header, search bar, avatar.-->
+                <!-- Header Container -->
+                <div class="container flex  justify-around items-center">
+                    <!-- Logo -->
+                    <div class="w-40">
+                        <p class="text-primaryColor text-4xl">
+                            EMPRESA
+                        </p>
+                    </div>
+                    <!-- Search bar -->
+                    <form class="flex justify-center items-center relative">
+                        <input type="search" class="bg-lightGrey w-[800px] h-10 rounded-3xl pl-8">
+                        <buttom type="submit" class="absolute top-1 right-2 fal fa-search text-white bg-primaryColor rounded-full p-2 cursor-pointer"></buttom>
+                    </form>
+                    <!-- Avatar -->                    
+                    <div class="w-12">
+                        <img src="/images/user" class="w-10 h-10 rounded-full">
+                    </div>
+                </div>
 
-            <!-- Logo -->
-            <div class="w-40 ml-8">
-                <p class="text-primaryColor text-4xl">
-                    EMPRESA
-                </p>
-            </div>
-            <!-- Search bar -->
-            <form class="flex justify-center items-center w-[800px] h-8 pr-8">
-                <input type="search" class="bg-lightGrey w-full h-full rounded-3xl">
-                <buttom type="submit">
-                    <i class="fal fa-search"></i>
-                </buttom>
-            </form>
-            <!-- Avatar -->
-            <div class="w-12 mr-8">
-                <img src="/images/user" class="w-12 h-12 rounded-full">
-            </div>
-
+                <!-- Tabs -->
+                <div class="tabs w-full h-12 mt-4">
+                    <ul class="flex justify-center items-center">
+                        <li class="mx-4 mt-4 text-sm text-center w-14 border-b-[6px] border-b-primaryColor">
+                            <h5 class="text-sm mb-3">Todo</h5>
+                        </li>
+                        <li class="mx-4 mt-4 text-center w-14 border-b-[6px] border-b-primaryColor">
+                            <h5 class="text-sm mb-3">Finanzas</h5>
+                        </li>
+                        <li class="mx-4 mt-4 text-center w-14 border-b-[6px] border-b-primaryColor">
+                            <h5 class="text-sm mb-3">Noticias</h5>
+                        </li>
+                        <li class="mx-4 mt-4 text-center w-14 border-b-[6px] border-b-primaryColor">
+                            <h5 class="text-sm mb-3">Politica</h5>
+                        </li>
+                        <li class="mx-4 mt-4 text-center w-14 border-b-[6px] border-b-primaryColor">
+                            <h5 class="text-sm mb-3">Economia</h5>
+                        </li>
+                        <li class="mx-4 mt-4 text-center w-14 border-b-[6px] border-b-primaryColor">
+                            <h5 class="text-sm mb-3">Firmas</h5>
+                        </li>
+                    </ul>
+                </div>
         </div>
-
 
     <script src="./js/app.js"></script>
 </body>
