@@ -10,8 +10,8 @@
 </head>
 <body>
     
-    <!-- WRAPPER -->
-        <div class="w-full mt-4">
+    <!-- WRAPPER-HEADER -->
+        <div class="wrapper w-full h-auto bg-white">
             <!-- Header, search bar, avatar.-->
                 <!-- Header Container -->
                 <div class="container flex  justify-around items-center">
@@ -32,8 +32,8 @@
                     </div>
                 </div>
 
-                <!-- Tabs -->
-                <div class="tabs w-full h-12 mt-4">
+                <!-- Tabs  h-12 -->
+                <div class="tabs w-full mt-4"> 
                     <ul class="flex justify-center items-center">
                         <li class="mx-4 mt-4 text-sm text-center w-14 border-b-[6px] border-b-primaryColor">
                             <h5 class="text-sm mb-3 font-medium">Todo</h5>
@@ -59,22 +59,129 @@
 
         <!-- Articles section -->
             <!-- Container -->
-            <div class="min-w-fit flex mt-14">
-                <img src="/images/article-1" class="w-64 h-48">
-                <!-- Section -->
-                <section class="flex flex-col">
-                    <h2>Mira como las DeFi lograron solucionar los errores que tienen las finanzas tradicionales</h2>
-                        <!-- Tag section -->
-                        <div class="flex">
-                            <i class="fal fa-clock"></i>
-                            <h6 class="text-secondaryColor">Hace 5 horas</h6>
-                            <i class="fal fa-tag"></i>
-                            <h6 class="text-secondaryColor">Finanzas</h6>
-                            <i class="fal fa-comment-alt"></i>
-                            <h6 class="text-secondaryColor">0</h6>
-                        </div>
-                </section>
+            <div class="flex flex-col justify-center items-center">
+                <!-- Article -->
+                <div class="article w-10/12 h-64 flex mt-12">
+                    <img src="/images/article-1" class="w-64 h-64 rounded-[4px]">
+                    <!-- Section -->
+                    <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
+                        <h2 class="w-6/12">Mira como las DeFi lograron solucionar los errores que tienen las finanzas tradicionales</h2>
+                            <!-- Tag section -->
+                            <div class="flex items-center space-x-3">
+                                <i class="fal fa-clock"></i>
+                                <h6 class="text-secondaryColor">Hace 5 horas</h6>
+                                <i class="fal fa-tag"></i>
+                                <h6 class="text-secondaryColor">Finanzas</h6>
+                                <i class="fal fa-comment-alt"></i>
+                                <h6 class="text-secondaryColor">0</h6>
+                            </div>
+                            <p class="w-11/12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                                nisl ut aliquip ex ea commodo consequat. </p>
+                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md ">Leer mas    >></button>
+                    </section>
+                </div>
+
+                <div class="article w-10/12 h-64 flex mt-4">
+                    <img src="/images/article-2" class="w-64 h-64 rounded-[4px]">
+                    <!-- Section -->
+                    <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
+                        <h2 class="w-6/12">Continuan las capacitaciones del programa <br>"Finanzas Cerca"</h2>
+                            <!-- Tag section -->
+                            <div class="flex items-center space-x-3">
+                                <i class="fal fa-clock"></i>
+                                <h6 class="text-secondaryColor">Hace 5 horas</h6>
+                                <i class="fal fa-tag"></i>
+                                <h6 class="text-secondaryColor">Economia</h6>
+                                <i class="fal fa-comment-alt"></i>
+                                <h6 class="text-secondaryColor">0</h6>
+                            </div>
+                            <p class="w-11/12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                                nisl ut aliquip ex ea commodo consequat. </p>
+                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md ">Leer mas    >></button>
+                    </section>
+                </div>
+
+                <div class="article w-10/12 h-64 flex mt-4">
+                    <img src="/images/article-3" class="w-64 h-64 rounded-[4px]">
+                    <!-- Section -->
+                    <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
+                        <h2 class="w-6/12">"Necesitamos una politica basada en el respeto, las propuestas y la cooperacion"</h2>
+                            <!-- Tag section -->
+                            <div class="flex items-center space-x-3">
+                                <i class="fal fa-clock"></i>
+                                <h6 class="text-secondaryColor">Hace 5 horas</h6>
+                                <i class="fal fa-tag"></i>
+                                <h6 class="text-secondaryColor">Firmas</h6>
+                                <i class="fal fa-comment-alt"></i>
+                                <h6 class="text-secondaryColor">0</h6>
+                            </div>
+                            <p class="w-11/12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                                nisl ut aliquip ex ea commodo consequat. </p>
+                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md ">Leer mas    >></button>
+                    </section>
+                </div>
+
+                <div class="article w-10/12 h-64 flex mt-4">
+                    <img src="/images/article-4" class="w-64 h-64 rounded-[4px]">
+                    <!-- Section -->
+                    <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
+                        <h2 class="w-6/12">Sociedades cientificas piden que la agenda politica aborde decididamente la crisis climatica y ambiental</h2>
+                            <!-- Tag section -->
+                            <div class="flex items-center space-x-3">
+                                <i class="fal fa-clock"></i>
+                                <h6 class="text-secondaryColor">Hace 5 horas</h6>
+                                <i class="fal fa-tag"></i>
+                                <h6 class="text-secondaryColor">Politica</h6>
+                                <i class="fal fa-comment-alt"></i>
+                                <h6 class="text-secondaryColor">0</h6>
+                            </div>
+                            <p class="w-11/12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                                nisl ut aliquip ex ea commodo consequat. </p>
+                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md ">Leer mas    >></button>
+                    </section>
+                </div>
+
+                <div class="article w-10/12 h-64 flex mt-4">
+                    <img src="/images/article-5" class="w-64 h-64 rounded-[4px]">
+                    <!-- Section -->
+                    <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
+                        <h2 class="w-6/12">La peor tormenta politica de Boris Johnson: augue y caida de la "ambicion rubia"</h2>
+                            <!-- Tag section -->
+                            <div class="flex items-center space-x-3">
+                                <i class="fal fa-clock"></i>
+                                <h6 class="text-secondaryColor">Hace 5 horas</h6>
+                                <i class="fal fa-tag"></i>
+                                <h6 class="text-secondaryColor">Noticias</h6>
+                                <i class="fal fa-comment-alt"></i>
+                                <h6 class="text-secondaryColor">0</h6>
+                            </div>
+                            <p class="w-11/12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                                nisl ut aliquip ex ea commodo consequat. </p>
+                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md ">Leer mas    >></button>
+                    </section>
+                </div>
             </div>
+
+        <!-- Pagination -->
+        <div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="w-full bg-lightBlack h-16 flex justify-between items-center mt-28 px-6">
+            <h6 class="text-white text-xs">Derechos reservados empresa 2022</h6>
+            <i class="fal fa-arrow-square-up text-white text-3xl"></i>
+        </div>
 
     <script src="./js/app.js"></script>
 </body>

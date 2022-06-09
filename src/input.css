@@ -6,3 +6,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background: rgb(241, 241, 241);
+}
+
+.wrapper {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.article {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}

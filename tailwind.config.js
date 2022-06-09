@@ -7,6 +7,7 @@ module.exports = {
         secondaryColor: '#4885ed',
         black: '#212121',
         lightGrey: '#f8f8f8',
+        lightBlack: '#4e4e4e',
       },
     },
   },
