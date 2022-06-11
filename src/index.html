@@ -11,7 +11,7 @@
 <body>
     
     <!-- WRAPPER-HEADER -->
-        <div class="wrapper w-full h-auto bg-white">
+        <div class="wrapper w-full h-auto bg-white pt-4">
             <!-- Header, search bar, avatar.-->
                 <!-- Header Container -->
                 <div class="container flex justify-around items-center">
@@ -23,7 +23,7 @@
                     </div>
                     <!-- Search bar -->
                     <form class="flex justify-center items-center relative">
-                        <input type="search" class="bg-lightGrey w-[800px] h-10 rounded-3xl pl-8 focus:outline-none">
+                        <input type="search" id="filterInput" class="bg-lightGrey w-[800px] h-10 rounded-3xl pl-8 focus:outline-none">
                         <buttom type="submit" class="absolute top-1 right-2 fal fa-search text-white bg-primaryColor rounded-full p-2 cursor-pointer"></buttom>
                     </form>
                     <!-- Avatar -->                    
@@ -59,16 +59,16 @@
 
         <!-- Articles section -->
             <!-- Container -->
-            <div class="flex flex-col justify-center items-center">
+            <ul id="articles" class="flex flex-col justify-center items-center">
                 <!-- Article -->
-                <div class="article w-10/12 h-64 flex mt-12">
+                <li class="article w-10/12 h-64 flex mt-12 article-item">
                     <!-- Article image -->
                     <div class="w-full overflow-hidden rounded-[4px]">
                         <img src="/images/article-1" class="w-full h-full rounded-[4px] object-cover object-center transition transform duration-200 hover:scale-[1.025]">
                     </div>
                     <!-- Section -->
                     <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
-                        <h2 class="w-6/12">Mira como las DeFi lograron solucionar los errores que tienen las finanzas tradicionales</h2>
+                        <h2 id="title" class="w-6/12">Mira como las DeFi lograron solucionar los errores que tienen las finanzas tradicionales</h2>
                             <!-- Tag section -->
                             <div class="flex items-center space-x-3">
                                 <i class="fal fa-clock"></i>
@@ -84,16 +84,16 @@
                                 nisl ut aliquip ex ea commodo consequat. </p>
                             <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md hover:opacity-75"><a href="/src/finanzas.html" class="no-underline">Leer mas >></a></button>
                     </section>
-                </div>
+                </li>
 
-                <div class="article w-10/12 h-64 flex mt-4">
+                <li class="article w-10/12 h-64 flex mt-4 article-item">
                     <!-- Article image -->
                     <div class="w-full overflow-hidden rounded-[4px]">
                         <img src="/images/article-2" class="w-full h-full rounded-[4px] object-cover object-center transition transform duration-200 hover:scale-[1.025]">
                     </div>
                     <!-- Section -->
                     <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
-                        <h2 class="w-6/12">Continuan las capacitaciones del programa <br>"Finanzas Cerca"</h2>
+                        <h2 id="title" class="w-6/12">Continuan las capacitaciones del programa <br>"Finanzas Cerca"</h2>
                             <!-- Tag section -->
                             <div class="flex items-center space-x-3">
                                 <i class="fal fa-clock"></i>
@@ -109,16 +109,16 @@
                                 nisl ut aliquip ex ea commodo consequat. </p>
                             <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md hover:opacity-75"><a href="/src/economia.html" class="no-underline">Leer mas >></a></button>
                     </section>
-                </div>
+                </li>
 
-                <div class="article w-10/12 h-64 flex mt-4">
+                <li class="article w-10/12 h-64 flex mt-4 article-item">
                     <!-- Article image -->
                     <div class="w-full overflow-hidden rounded-[4px]">
                         <img src="/images/article-3" class="w-full h-full rounded-[4px] object-cover object-center transition transform duration-200 hover:scale-[1.025]">
                     </div>
                     <!-- Section -->
                     <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
-                        <h2 class="w-6/12">"Necesitamos una politica basada en el respeto, las propuestas y la cooperacion"</h2>
+                        <h2 id="title" class="w-6/12">"Necesitamos una politica basada en el respeto, las propuestas y la cooperacion"</h2>
                             <!-- Tag section -->
                             <div class="flex items-center space-x-3">
                                 <i class="fal fa-clock"></i>
@@ -134,16 +134,16 @@
                                 nisl ut aliquip ex ea commodo consequat. </p>
                             <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md hover:opacity-75"><a href="/src/firmas.html" class="no-underline">Leer mas >></a></button>
                     </section>
-                </div>
+                </li>
 
-                <div class="article w-10/12 h-64 flex mt-4">
+                <li class="article w-10/12 h-64 flex mt-4 article-item">
                     <!-- Article image -->
                     <div class="w-full overflow-hidden rounded-[4px]">
                         <img src="/images/article-4" class="w-full h-full rounded-[4px] object-cover object-center transition transform duration-200 hover:scale-[1.025]">
                     </div>
                     <!-- Section -->
                     <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
-                        <h2 class="w-6/12">Sociedades cientificas piden que la agenda politica aborde decididamente la crisis climatica y ambiental</h2>
+                        <h2 id="title" class="w-6/12">Sociedades cientificas piden que la agenda politica aborde decididamente la crisis climatica y ambiental</h2>
                             <!-- Tag section -->
                             <div class="flex items-center space-x-3">
                                 <i class="fal fa-clock"></i>
@@ -159,16 +159,16 @@
                                 nisl ut aliquip ex ea commodo consequat. </p>
                             <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md hover:opacity-75"><a href="/src/politica.html" class="no-underline">Leer mas >></a></button>
                     </section>
-                </div>
+                </li>
 
-                <div class="article w-10/12 h-64 flex mt-4">
+                <li class="article w-10/12 h-64 flex mt-4 article-item">
                     <!-- Article image -->
                     <div class="w-full overflow-hidden rounded-[4px]">
                         <img src="/images/article-5" class="w-full h-full rounded-[4px] object-cover object-center transition transform duration-200 hover:scale-[1.025]">
                     </div>
                     <!-- Section -->
                     <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
-                        <h2 class="w-6/12">La peor tormenta politica de Boris Johnson: augue y caida de la "ambicion rubia"</h2>
+                        <h2 id="title" class="w-6/12">La peor tormenta politica de Boris Johnson: augue y caida de la "ambicion rubia"</h2>
                             <!-- Tag section -->
                             <div class="flex items-center space-x-3">
                                 <i class="fal fa-clock"></i>
@@ -184,8 +184,8 @@
                                 nisl ut aliquip ex ea commodo consequat. </p>
                             <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md hover:opacity-75"><a href="/src/noticias.html" class="no-underline">Leer mas >></a></button>
                     </section>
-                </div>
-            </div>
+                </li>
+            </ul>
 
         <!-- Footer -->
         <div class="w-full bg-lightBlack h-16 flex justify-between items-center mt-28 px-6">
@@ -193,6 +193,6 @@
             <i class="fal fa-arrow-square-up text-white text-3xl"></i>
         </div>
 
-    <script src="./js/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
