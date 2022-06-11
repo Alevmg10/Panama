@@ -14,7 +14,7 @@
         <div class="wrapper w-full h-auto bg-white">
             <!-- Header, search bar, avatar.-->
                 <!-- Header Container -->
-                <div class="container flex  justify-around items-center">
+                <div class="container flex justify-around items-center">
                     <!-- Logo -->
                     <div class="w-40">
                         <p class="text-primaryColor text-4xl">
@@ -23,7 +23,7 @@
                     </div>
                     <!-- Search bar -->
                     <form class="flex justify-center items-center relative">
-                        <input type="search" class="bg-lightGrey w-[800px] h-10 rounded-3xl pl-8">
+                        <input type="search" class="bg-lightGrey w-[800px] h-10 rounded-3xl pl-8 focus:outline-none">
                         <buttom type="submit" class="absolute top-1 right-2 fal fa-search text-white bg-primaryColor rounded-full p-2 cursor-pointer"></buttom>
                     </form>
                     <!-- Avatar -->                    
@@ -32,26 +32,26 @@
                     </div>
                 </div>
 
-                <!-- Tabs  h-12 -->
+                <!-- Tabs -->
                 <div class="tabs w-full mt-4"> 
                     <ul class="flex justify-center items-center">
-                        <li class="mx-4 mt-4 text-sm text-center w-14 border-b-[6px] border-b-primaryColor">
-                            <h5 class="text-sm mb-3 font-medium">Todo</h5>
+                        <li class="mx-4 mt-4 text-sm text-center w-14 active">
+                            <h5 class="text-sm mb-3 font-medium"><a href="#" class="no-underline ">Todo</a></h5>
                         </li>
-                        <li class="mx-4 mt-4 text-center w-14 border-b-[6px] border-b-primaryColor">
-                            <h5 class="text-sm mb-3 font-medium">Finanzas</h5>
+                        <li class="mx-4 mt-4 text-center w-14 hover:opacity-75">
+                            <h5 class="text-sm mb-3 font-medium"><a href="/src/finanzas.html" class="no-underline">Finanzas</a></h5>
                         </li>
-                        <li class="mx-4 mt-4 text-center w-14 border-b-[6px] border-b-primaryColor">
-                            <h5 class="text-sm mb-3 font-medium">Noticias</h5>
+                        <li class="mx-4 mt-4 text-center w-14 hover:opacity-75">
+                            <h5 class="text-sm mb-3 font-medium"><a href="/src/noticias.html" class="no-underline ">Noticias</a></h5>
                         </li>
-                        <li class="mx-4 mt-4 text-center w-14 border-b-[6px] border-b-primaryColor">
-                            <h5 class="text-sm mb-3 font-medium">Politica</h5>
+                        <li class="mx-4 mt-4 text-center w-14 hover:opacity-75">
+                            <h5 class="text-sm mb-3 font-medium"><a href="/src/politica.html" class="no-underline ">Politica</a></h5>
                         </li>
-                        <li class="mx-4 mt-4 text-center w-14 border-b-[6px] border-b-primaryColor">
-                            <h5 class="text-sm mb-3 font-medium">Economia</h5>
+                        <li class="mx-4 mt-4 text-center w-14 hover:opacity-75">
+                            <h5 class="text-sm mb-3 font-medium"><a href="/src/economia.html" class="no-underline ">Economia</a></h5>
                         </li>
-                        <li class="mx-4 mt-4 text-center w-14 border-b-[6px] border-b-primaryColor">
-                            <h5 class="text-sm mb-3 font-medium">Firmas</h5>
+                        <li class="mx-4 mt-4 text-center w-14 hover:opacity-75">
+                            <h5 class="text-sm mb-3 font-medium"><a href="/src/firmas.html" class="no-underline ">Firmas</a></h5>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +62,10 @@
             <div class="flex flex-col justify-center items-center">
                 <!-- Article -->
                 <div class="article w-10/12 h-64 flex mt-12">
-                    <img src="/images/article-1" class="w-64 h-64 rounded-[4px]">
+                    <!-- Article image -->
+                    <div class="w-full overflow-hidden rounded-[4px]">
+                        <img src="/images/article-1" class="w-full h-full rounded-[4px] object-cover object-center transition transform duration-200 hover:scale-[1.025]">
+                    </div>
                     <!-- Section -->
                     <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
                         <h2 class="w-6/12">Mira como las DeFi lograron solucionar los errores que tienen las finanzas tradicionales</h2>
@@ -79,12 +82,15 @@
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
                                 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
                                 nisl ut aliquip ex ea commodo consequat. </p>
-                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md ">Leer mas    >></button>
+                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md hover:opacity-75"><a href="/src/finanzas.html" class="no-underline">Leer mas >></a></button>
                     </section>
                 </div>
 
                 <div class="article w-10/12 h-64 flex mt-4">
-                    <img src="/images/article-2" class="w-64 h-64 rounded-[4px]">
+                    <!-- Article image -->
+                    <div class="w-full overflow-hidden rounded-[4px]">
+                        <img src="/images/article-2" class="w-full h-full rounded-[4px] object-cover object-center transition transform duration-200 hover:scale-[1.025]">
+                    </div>
                     <!-- Section -->
                     <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
                         <h2 class="w-6/12">Continuan las capacitaciones del programa <br>"Finanzas Cerca"</h2>
@@ -101,12 +107,15 @@
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
                                 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
                                 nisl ut aliquip ex ea commodo consequat. </p>
-                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md ">Leer mas    >></button>
+                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md hover:opacity-75"><a href="/src/economia.html" class="no-underline">Leer mas >></a></button>
                     </section>
                 </div>
 
                 <div class="article w-10/12 h-64 flex mt-4">
-                    <img src="/images/article-3" class="w-64 h-64 rounded-[4px]">
+                    <!-- Article image -->
+                    <div class="w-full overflow-hidden rounded-[4px]">
+                        <img src="/images/article-3" class="w-full h-full rounded-[4px] object-cover object-center transition transform duration-200 hover:scale-[1.025]">
+                    </div>
                     <!-- Section -->
                     <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
                         <h2 class="w-6/12">"Necesitamos una politica basada en el respeto, las propuestas y la cooperacion"</h2>
@@ -123,12 +132,15 @@
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
                                 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
                                 nisl ut aliquip ex ea commodo consequat. </p>
-                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md ">Leer mas    >></button>
+                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md hover:opacity-75"><a href="/src/firmas.html" class="no-underline">Leer mas >></a></button>
                     </section>
                 </div>
 
                 <div class="article w-10/12 h-64 flex mt-4">
-                    <img src="/images/article-4" class="w-64 h-64 rounded-[4px]">
+                    <!-- Article image -->
+                    <div class="w-full overflow-hidden rounded-[4px]">
+                        <img src="/images/article-4" class="w-full h-full rounded-[4px] object-cover object-center transition transform duration-200 hover:scale-[1.025]">
+                    </div>
                     <!-- Section -->
                     <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
                         <h2 class="w-6/12">Sociedades cientificas piden que la agenda politica aborde decididamente la crisis climatica y ambiental</h2>
@@ -145,12 +157,15 @@
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
                                 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
                                 nisl ut aliquip ex ea commodo consequat. </p>
-                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md ">Leer mas    >></button>
+                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md hover:opacity-75"><a href="/src/politica.html" class="no-underline">Leer mas >></a></button>
                     </section>
                 </div>
 
                 <div class="article w-10/12 h-64 flex mt-4">
-                    <img src="/images/article-5" class="w-64 h-64 rounded-[4px]">
+                    <!-- Article image -->
+                    <div class="w-full overflow-hidden rounded-[4px]">
+                        <img src="/images/article-5" class="w-full h-full rounded-[4px] object-cover object-center transition transform duration-200 hover:scale-[1.025]">
+                    </div>
                     <!-- Section -->
                     <section class="flex flex-col justify-between pl-4 py-4 bg-white rounded-[4px]">
                         <h2 class="w-6/12">La peor tormenta politica de Boris Johnson: augue y caida de la "ambicion rubia"</h2>
@@ -167,15 +182,10 @@
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
                                 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
                                 nisl ut aliquip ex ea commodo consequat. </p>
-                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md ">Leer mas    >></button>
+                            <button class="bg-primaryColor flex justify-center items-center w-2/12 h-10 text-white font-semibold rounded-md hover:opacity-75"><a href="/src/noticias.html" class="no-underline">Leer mas >></a></button>
                     </section>
                 </div>
             </div>
-
-        <!-- Pagination -->
-        <div>
-
-        </div>
 
         <!-- Footer -->
         <div class="w-full bg-lightBlack h-16 flex justify-between items-center mt-28 px-6">
